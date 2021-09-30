@@ -30,14 +30,16 @@ h2 {
     background-color: transparent;
     font-weight: 500;
     opacity: 50%;
+    margin-top: 5px;
 }
 
 p {
-    flex: 1 1 auto;
+    font-family: 'Barlow Semi Condensed', sans-serif;
     background-color: transparent;
     font-weight: 500;
-    opacity: 70%;
+    opacity: 50%;
     line-height: 1.2rem;
+    font-size: 13px;
     
     
 }
@@ -46,11 +48,11 @@ p {
     font-size: 1.2rem;
     font-weight: 600;
     line-height: 1.4rem;
-    margin-bottom: 0.6rem;
+    opacity: 90%;
 }
 
 img {
-    height: 25px;
+    height: 35px;
     width: auto;
     border-radius: 25px;
     margin: 1rem 0.5rem 1rem 0.5rem;
@@ -64,13 +66,14 @@ body {
 }
 
 main {
-    max-width: 1200px;
+    max-width: 1100px;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: center;
     align-content: flex-start;
     align-items: stretch;
+    margin: 10% auto auto auto;
     
 }
 
@@ -90,14 +93,13 @@ section {
     flex-wrap: nowrap;
     justify-content: center;
     align-content: flex-start;
-    align-items: stretch;
     flex: 5 1 0;
     align-self: auto;
     
 }
 .testimonial_right {
     flex: 1 1 0;
-    align-self: stretch;
+    
 
 }
 
@@ -109,6 +111,7 @@ section {
    
 }
 
+
 .down {
     display: flex;
     flex-direction: row;
@@ -119,10 +122,15 @@ section {
 article {
     display: flex;
     flex-direction: column;
-    padding: 0.9rem 2.5rem 1.5rem 2.5rem;
-    margin: 10px;
-    border-radius: 10px;
+    padding: 0.9rem 2rem 1.5rem 2rem;
+    margin: 10px 15px;
+    border-radius: 10px 15px;
     background-color: transparent;
+    
+}
+
+.quote {
+    margin-top: 1rem;
 }
 
 
@@ -130,30 +138,52 @@ article {
     flex: 3 1 0;
     align-self: auto;
     background-color: var(--moderateViolet);
+    color: var(--white);
+    background-image: url(images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position: 80% 0%;
 }
+
+
 
 .testimony2_up {
     flex: 1 1 0;
     align-self: auto;
     background-color: var(--veryDarkGrayishBlue);
+    color: var(--lightGrayishBlue);
 }
 
 .testimony1_down {
     flex: 1 1 0;
     align-self: auto;
     background-color: var(--white);
+    color: var(--veryDarkBlackishBlue);
 }
 
 .testimony2_down {
     flex: 3 1 0;
     align-self: auto;
     background-color: var(--veryDarkBlackishBlue);
+    color: var(--white);
 }
 
 .testimonial_right {
     background-color: var(--lightGrayishBlue);
+    color: var(--veryDarkBlackishBlue);
 }
 
 .graduate_name {
     background-color: transparent;
+}
+
+@media (max-width: 375px) {
+    main {
+        flex-direction: column;
+    }
+    .up {
+        flex-direction: column;
+    }
+    .down {
+        flex-direction: column;
+    }
 }
