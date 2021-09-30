@@ -176,7 +176,28 @@ article {
     background-color: transparent;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 800px) {
+    .testimonial_left {
+        flex: 3 1 0;
+    }
+        .testimonial_right {
+        flex: 1 1 0;
+    }
+    .testimony1_up {
+        flex: 1 1 0;
+    }
+    .testimony2_up {
+        flex: 1 1 0;
+    }
+    .testimony1_down {
+        flex: 1 1 0;
+    }
+    .testimony2_down {
+        flex: 1 1 0;
+    }
+}
+
+@media (max-width: 600px) {
     main {
         flex-direction: column;
     }
