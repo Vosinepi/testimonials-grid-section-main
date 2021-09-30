@@ -1,0 +1,159 @@
+:root {
+    --moderateViolet: hsl(263, 55%, 52%);
+    --veryDarkGrayishBlue: hsl(217, 19%, 35%);
+    --veryDarkBlackishBlue: hsl(219, 29%, 14%);
+    --white: hsl(0, 0%, 100%);
+    --lightGray: hsl(0, 0%, 81%);
+    --lightGrayishBlue: hsl(210, 46%, 95%);
+  }
+
+* {
+  margin: 0;
+  padding: 0;
+  background: var(--lightGray);
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+h1 {
+    background-color: transparent;
+    font-weight: 600;
+    
+}
+
+h2 {
+    font-size: 0.8rem;
+    background-color: transparent;
+    font-weight: 500;
+    opacity: 50%;
+}
+
+p {
+    flex: 1 1 auto;
+    background-color: transparent;
+    font-weight: 500;
+    opacity: 70%;
+    line-height: 1.2rem;
+    
+    
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: 1.4rem;
+    margin-bottom: 0.6rem;
+}
+
+img {
+    height: 25px;
+    width: auto;
+    border-radius: 25px;
+    margin: 1rem 0.5rem 1rem 0.5rem;
+    border: 1px solid var(--lightGray)
+}
+
+body {
+    font-size: 13px;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    line-height: 1;
+}
+
+main {
+    max-width: 1200px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: flex-start;
+    align-items: stretch;
+    
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    background-color: transparent;
+    
+}
+
+
+.testimonial_left {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: flex-start;
+    align-items: stretch;
+    flex: 5 1 0;
+    align-self: auto;
+    
+}
+.testimonial_right {
+    flex: 1 1 0;
+    align-self: stretch;
+
+}
+
+.up {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    flex: 1 1 auto;
+   
+}
+
+.down {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    flex: 1 1 auto;
+    
+}
+article {
+    display: flex;
+    flex-direction: column;
+    padding: 0.9rem 2.5rem 1.5rem 2.5rem;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: transparent;
+}
+
+
+.testimony1_up {
+    flex: 3 1 0;
+    align-self: auto;
+    background-color: var(--moderateViolet);
+}
+
+.testimony2_up {
+    flex: 1 1 0;
+    align-self: auto;
+    background-color: var(--veryDarkGrayishBlue);
+}
+
+.testimony1_down {
+    flex: 1 1 0;
+    align-self: auto;
+    background-color: var(--white);
+}
+
+.testimony2_down {
+    flex: 3 1 0;
+    align-self: auto;
+    background-color: var(--veryDarkBlackishBlue);
+}
+
+.testimonial_right {
+    background-color: var(--lightGrayishBlue);
+}
+
+.graduate_name {
+    background-color: transparent;
+}
