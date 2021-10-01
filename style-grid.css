@@ -72,13 +72,16 @@ main {
 
 aside {
  display: grid;
+ 
 }
+
 
 .card   {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px 30px;
 }
+
 
 .title {
     display: flex;
@@ -93,10 +96,13 @@ article {
     padding: 27px;
     border-radius: 10px 15px;
     background-color: transparent;
-    
+    transition-duration: 0.5s;
 }
 
-
+article:hover {
+    filter: opacity(0.9);
+    transform: scale(1.02);    
+}
 
 
 .testimony1_up {
@@ -140,6 +146,8 @@ article {
     margin-top: 0.5rem;
     margin-bottom: 1rem;
 }
+
+
 
 @media (max-width: 870px) {
     main {
