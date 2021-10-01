@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-  <link rel="stylesheet" href="style-grid.css">
+  <link rel="stylesheet" href="style-flex.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | [Laimas]</title>
@@ -16,10 +16,12 @@
   </style>
 </head>
 <body>
-  
+  <header>
+    <h1 class="headin">testimonial grid</h1>
+  </header>
   <main class="section">
-    
-      <div class="card">
+    <div class="testimonial_left">
+      <div class="up">
         <article aria-label="article" class="testimony1_up">
           <section class="title">
             <img src="images/image-daniel.jpg" alt="Daniel">
@@ -36,7 +38,6 @@
             The next 12 weeks was the best - and most grueling - time of my life. Since completing 
             the course, I’ve successfully switched careers, working as a Software Engineer at a VR startup. ”</p>
         </article>
-
         <article aria-label="article" class="testimony2_up">
           <section class="title">
             <img src="images/image-jonathan.jpg" alt="Jonathan">
@@ -50,7 +51,8 @@
             “ I started as a total newbie with virtually no coding skills. I now work as a mobile engineer 
             for a big company. This was one of the best investments I’ve made in myself. ”</p>
         </article>
-      
+      </div>
+      <div class="down">
         <article aria-label="article" class="testimony1_down">
           <section class="title">
             <img src="images/image-jeanette.jpg" alt="Jeanette">
@@ -64,7 +66,6 @@
             “ Thank you for the wonderful experience! I now have a job I really enjoy, and make a good living 
             while doing something I love. ”</p>
         </article>
-
         <article aria-label="article" class="testimony2_down">
           <section class="title">
             <img src="images/image-patrick.jpg" alt="Patrick">
@@ -82,29 +83,25 @@
             an incredible community of smart and amazing people. ”</p>
         </article>
       </div>
-
-      <aside class="testimoy">
-          <article aria-label="article" class="testimonial_right">
-            <section class="title">
-              <img src="images/image-kira.jpg" alt="Kira">
-                <div class="graduate_name">
-                  <h2>Kira Whittle</h2>
-                  <p>Verified Graduate</p>
-                </div>
-            </section>
-            <p class="subtitle">Such a life-changing experience. Highly recommended!</p>
-            <p class="quote">“ Before joining the bootcamp, I’ve never written a line of code. I needed some structure from 
-              professionals who can help me learn programming step by step. I was encouraged to enroll by a former 
-              student of theirs who can only say wonderful things about the program. The entire curriculum and staff 
-              did not disappoint. They were very hands-on and I never had to wait long for assistance. The agile team 
-              project, in particular, was outstanding. It took my learning to the next level in a way that no tutorial 
-              could ever have. In fact, I’ve often referred to it during interviews as an example of my developent 
-              experience. It certainly helped me land a job as a full-stack developer after receiving multiple offers. 
-              100% recommend! ”</p>
-          </article>
-      </aside>
-              
+    </div>
+    <article aria-label="article" class="testimonial_right">
+      <section class="title">
+        <img src="images/image-kira.jpg" alt="Kira">
+          <div class="graduate_name">
+            <h2>Kira Whittle</h2>
+            <p>Verified Graduate</p>
+          </div>
+      </section>
+      <p class="subtitle">Such a life-changing experience. Highly recommended!</p>
+      <p class="quote">“ Before joining the bootcamp, I’ve never written a line of code. I needed some structure from 
+        professionals who can help me learn programming step by step. I was encouraged to enroll by a former 
+        student of theirs who can only say wonderful things about the program. The entire curriculum and staff 
+        did not disappoint. They were very hands-on and I never had to wait long for assistance. The agile team 
+        project, in particular, was outstanding. It took my learning to the next level in a way that no tutorial 
+        could ever have. In fact, I’ve often referred to it during interviews as an example of my developent 
+        experience. It certainly helped me land a job as a full-stack developer after receiving multiple offers. 
+        100% recommend! ”</p>
+    </article>
   </main>
-
 </body>
 </html>
