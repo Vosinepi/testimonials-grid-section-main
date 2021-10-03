@@ -106,8 +106,7 @@ article:hover {
 
 
 .testimony1_up {
-    grid-column-start: 1;
-    grid-column-end: 3;
+    grid-column: span 2;
     background-color: var(--moderateViolet);
     color: var(--white);
     background-image: url(images/bg-pattern-quotation.svg);
@@ -130,8 +129,7 @@ article:hover {
 }
 
 .testimony2_down {
-    grid-column-start: 2;
-    grid-column-end: 4;
+    grid-column: span 2;
     background-color: var(--veryDarkBlackishBlue);
     color: var(--white);
 }
@@ -162,14 +160,14 @@ article:hover {
         gap: 15px 20px;
     }        
     .testimony1_up {
-        grid-column-start: 1;
-        grid-column-end: 2;
+        grid-column: span 1;
     }
     .testimony2_down {
-        grid-column-start: 1;
-        grid-column-end: 2;
+        grid-column: span 1;
     }
-}
+} 
+
+
 
 
 @media (max-width: 650px) {
@@ -185,3 +183,4 @@ article:hover {
         gap: 15px 20px;
     }   
 }
+
